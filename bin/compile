@@ -9,6 +9,8 @@ then
   echo '       Overwriting existing `static.json`'
 fi
 
-echo '{ "root": "storybook-static/" }' > static.json
+echo '{ "root": ".out/", "clean_urls": true, "basic_auth": true   }' > static.json
 
-yarn build-storybook
+rm Procfile
+yarn install
+yarn storybook-export

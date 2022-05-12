@@ -12,4 +12,4 @@ fi
 echo '{ "root": ".out/", "clean_urls": true, "basic_auth": true   }' > static.json
 
 rm Procfile
-yarn build-storybook
+node --max_old_space_size=2560 yarn build-storybook

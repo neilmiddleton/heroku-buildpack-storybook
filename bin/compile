@@ -13,4 +13,4 @@ echo '{ "root": ".out/", "clean_urls": true, "basic_auth": true   }' > static.js
 
 rm Procfile
 yarn install
-yarn storybook-export
+yarn build-storybook

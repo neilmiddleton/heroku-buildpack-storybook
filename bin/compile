@@ -12,5 +12,4 @@ fi
 echo '{ "root": ".out/", "clean_urls": true, "basic_auth": true   }' > static.json
 
 rm Procfile
-yarn install
 yarn build-storybook

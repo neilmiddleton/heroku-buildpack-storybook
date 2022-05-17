@@ -9,7 +9,7 @@ then
   echo '       Overwriting existing `static.json`'
 fi
 
-echo '{ "root": ".out/", "clean_urls": true, "basic_auth": true   }' > static.json
+echo '{ "root": "public/storybook-static", "clean_urls": true, "basic_auth": true   }' > static.json
 
 rm Procfile
 NODE_OPTIONS="--max-old-space-size=2560" yarn build-storybook
